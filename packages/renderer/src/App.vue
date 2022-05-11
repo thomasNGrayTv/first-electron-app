@@ -1,22 +1,19 @@
 <script lang="ts" setup>
-import ReactiveCounter from '/@/components/ReactiveCounter.vue';
-import ReactiveHash from '/@/components/ReactiveHash.vue';
-import ElectronVersions from '/@/components/ElectronVersions.vue';</script>
+import ReactiveCounter from "/@/components/ReactiveCounter.vue";
+import ReactiveHash from "/@/components/ReactiveHash.vue";
+import ElectronVersions from "/@/components/ElectronVersions.vue";
+</script>
 
 <template>
-  <img
-    alt="Vue logo"
-    src="../assets/logo.svg"
-    width="150"
-  >
+  <router-view></router-view>
+  <!-- <img alt="Vue logo" src="../assets/logo.svg" width="150" />
 
   <p>
-    For a guide and recipes on how to configure / customize this project,<br>
+    For the guide and recipes on how to configure / customize this project,<br />
     check out the
-    <a
-      href="https://github.com/cawa-93/vite-electron-builder"
-      target="_blank"
-    >vite-electron-builder documentation</a>.
+    <a href="https://github.com/cawa-93/vite-electron-builder" target="_blank"
+      >vite-electron-builder documentation</a
+    >.
   </p>
 
   <fieldset>
@@ -37,7 +34,7 @@ import ElectronVersions from '/@/components/ElectronVersions.vue';</script>
   <p>
     Edit
     <code>packages/renderer/src/App.vue</code> to test hot module replacement.
-  </p>
+  </p> -->
 </template>
 
 <style>
