@@ -17,7 +17,7 @@ try {
 </script>
 
 <template>
-  <div class="cards relative flex">
+  <div class="relative flex cards">
     <Card
       v-for="(card, index) in store.cards"
       :key="card"
@@ -31,12 +31,12 @@ try {
       :id="'card' + index"
     ></Card>
     <div
-      class="absolute leftCustom1 widthCustom1 hCustom border-2 border-dashed dropzone saveDropZone m-4"
+      class="absolute m-4 border-2 border-dashed leftCustom1 widthCustom1 hCustom dropzone saveDropZone"
     >
       <h2 class="text-4xl text-center">Save</h2>
     </div>
     <div
-      class="absolute leftCustom2 widthCustom2 hCustom border-2 border-dashed dropzone trashDropZone m-4"
+      class="absolute m-4 border-2 border-dashed leftCustom2 widthCustom2 hCustom dropzone trashDropZone"
     >
       <h2 class="text-4xl text-center">Trash</h2>
     </div>
@@ -48,7 +48,6 @@ try {
   top: 2em;
   left: 1em;
   width: 100%;
-  min-width: 95em;
   height: 100%;
 }
 

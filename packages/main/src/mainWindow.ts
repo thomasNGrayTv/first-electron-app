@@ -6,6 +6,8 @@ remoteMain.initialize();
 
 async function createWindow() {
   const browserWindow = new BrowserWindow({
+    width: 1400,
+    height: 900,
     show: false, // Use 'ready-to-show' event to show window
     webPreferences: {
       nativeWindowOpen: true,
