@@ -1,7 +1,9 @@
+const path = require("path");
+
 module.exports = {
   content: [
-    "./packages/renderer/index.html",
-    "./packages/renderer/src/**/*.{vue,js,ts,jsx,tsx}",
+    path.join(__dirname, "./pages/**/*.{js,ts,jsx,tsx}"),
+    path.join(__dirname, "./components/**/*.{js,ts,jsx,tsx}"),
   ],
   theme: {
     extend: {},
